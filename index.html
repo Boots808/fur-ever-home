@@ -1,25 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>endless-pawsibilities-adoption-search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>fur-ever-home</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+  <!--header start-->
+      <header>
+  <!--navigation bar start-->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item has-background-info" href="./assets/Screen Shot 2022-06-09 at 9.49.07 PM.png">
+              <img src="./assets/Screen Shot 2022-06-09 at 9.49.07 PM.png">
+            </a>
+  <!--nav menu button-->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+   <!--nav home button-->     
+          <div id="navbarBasicExample" class="navbar-menu has-background-info">
+            <div class="navbar-start">
+              <a class="navbar-item has-text-white">
+                Adopt
+              </a>
+     <!-- nav about button-->   
+              <a class="navbar-item has-text-white">
+                About
+              </a>
+     <!--nav more button with drop down selections-->   
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link has-text-white">
+                  Additional Info
+                </a>
+       <!--nav more button drop down selections--> 
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    About
+                  </a>
+                  <a class="navbar-item">
+                    Adoption & Breed Information
+                  </a>
+                  <a class="navbar-item">
+                    Newsletter Sign-Up
+                  </a>
+                  <a class="navbar-item">
+                    Website Social Media Pages
+                  </a>
+                </div>
+              </div>
+            </div>
+        </nav>
+        </header>
+   <!--header end-->
+<br/>
+<!--page title text w/ white background-->
+<section>
+  <p class="title is-size-2-fullhd has-text-info-dark has-text-centered">
+    Welcome to Endless Pawsibilities
+  </p>
+  <p class="subtitle is-size-4-fullhd has-text-grey has-text-centered">
+   <em> Dog Adoption Made Easy!</em>
+  </p>
+  </section>
+<br/>
+<!-- hero section start-->
+        <section class="hero is-primary is-large has-background">
+          <!-- Hero head: will stick at the top -->
+          <!-- Hero content: will be in the middle -->
+          <div class="hero-body">
+     <!--card header-->       
+      <section>
+      </section>
+          </div>
+          </section>
+      <!--pet search criteria section-->
+          <div class="columns">
+            <div class="column">
+            <section class="section" id="search-box">
+              <div class="container">
+                <h1 class="title">Find Adorable Dogs Near You</h1>
+      <!--zip code submission box -->
+                <h2><strong>Enter Your Zip Code:</strong></h2>
+                <div class="control">
+                  <input class="input" type="text">
+                </div>
+                <br>
+<!--age selection drop down-->
+<div class="field">
+  <label class="label">Age </label>
+  <div class="control">
+    <div class="select">
+      <select>
+        <option>Select</option>
+        <option>puppy</option>
+        <option>young</option>
+        <option>adult</option>
+        <option>elderly</option>
+      </select>
+    </div>
+  </div>
+</div>
+      <!--breed selection drop down - NEED TO ADD LIST FUNCTION-->
+      <div class="field">
+        <label class="label">Breed </label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select</option>
+              
+            </select>
+          </div>
+        </div>
+      </div>
 
-    </header>
+       <!- mileage selection drop down - NEED TO FUNCTIONALITY-->
+       <div class="field">
+        <label class="label">Distance: </label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select</option>
+              <option>5 Miles</option>
+              <option>10 Miles</option>
+              <option>15 Miles</option>
+              <option>20 Miles</option>
+              <option>25 Miles</option>
+              <option>25+ Miles</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <!--search button-->
+                <div class="control">
+                  <button class="button is-info">Search</button>
+                </div>
+              </div>
+            </section>
+            </div>
+            <div class="column">
+              <section class="section" id="search-box">
+                <h1 class="title">About Us</h1>
+                <p>Our mission is to assist others in finding a dog that is eager to find their new furever family and home. Just enter in your search criteria, click submit, and browse the list of dogs ready to be adopted near you!</p>
+                <br/>
+                <p>We also provide tips and information about the pet adoption process, what to expect, and resources for caring for all types of breeds to further assist you in a smooth transition when you bring your sweet pup home with you.</p>
+                <br>
+                <p>We have so much to share each month! To keep up to date with our monthly newsletter submit your email below.</p>
+                <br/>
+                <div class="field">
+                  <label class="label">Enter Email Below:</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                  </div>
+                  <p class="help is-danger">This email is invalid</p>
+                </div>
+              </section>
+              </div>
+          </div>
+          <div class = "search-result">
+              <div class="row displayCocktail" id="#displayCocktail">
+                <div class="col-xs-push-2 col-xs-5" id="cocktailPicture"></div>
+                <div class="col-xs-push-1 col-xs-4" id="cocktailInfo">
+                    <div id="cocktailTitle"></div>
+                    <div id="howTo"></div>
+                    <div id="instructions"></div>
+                </div>
 
-    <main>
+<section>
+  <P>Place card horizontally</P>
+  <P>Place card horizontally</P>
+  <P>Place card horizontally</P>
+  <P>Place card horizontally</P>
+  <P>Place card horizontally</P>
+</section>
+<!--footer-->
+  <footer class="footer has-background-info navbar-end">
+<!--footer social media icon buttons-->
+    <section>
+    <a class="button is-medium is-home is-inverted">
+      <span class="icon">
+        <i class="fas fa-home fa-lg"></i>
+      </span>
+  </a>
 
-    </main>
+    <a class="button is-medium is-facebook is-inverted">
+      <span class="icon">
+        <i class="fab fa-facebook fa-lg"></i>
+      </span>
+  </a>
+ 
+  <a class="button is-medium is-instagram is-inverted">
+    <span class="icon">
+      <i class="fab fa-instagram fa-lg"></i>
+    </span>
+</a>
 
-    <footer>
-
-    </footer>
-
-    <script src="/script.js"
+<a class="button is-medium is-twitter is-inverted">
+  <span class="icon">
+    <i class="fab fa-twitter fa-lg"></i>
+  </span>
+</a>
+</section>
+<!--footer social media icon button end-->
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
