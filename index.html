@@ -27,7 +27,7 @@
           </div>
    <!--nav home button-->     
           <div id="navbarBasicExample" class="navbar-menu has-background-info">
-            <div class="navbar-start">
+            <div class="navbar-end">
               <a class="navbar-item has-text-white">
                 Adopt
               </a>
@@ -72,7 +72,7 @@
   </section>
 <br/>
 <!-- hero section start-->
-        <section class="hero is-primary is-large has-background">
+        <section class="hero is-primary is-large">
           <!-- Hero head: will stick at the top -->
           <!-- Hero content: will be in the middle -->
           <div class="hero-body">
@@ -82,62 +82,72 @@
           </div>
           </section>
       <!--pet search criteria section-->
-          <div class="columns">
-            <div class="column">
-            <section class="section" id="search-box">
+          <div class="columns has-background-white">
+            <div class="column is-info">
+            <section class="section message has-background-white" id="search-box">
               <div class="container">
-                <h1 class="title">Find Adorable Dogs Near You</h1>
-      <!--zip code submission box -->
-                <h2><strong>Enter Your Zip Code:</strong></h2>
-                <div class="control">
-                  <input class="input" type="text">
-                </div>
-                <br>
+<!--texting this-->
+<article class="is-info">
+  <div class="title">
+    <h2 class="is-size-4.5-fullhd has-text-info">Find Adorable Dogs Near You</h2>
+  </div>
+
+  <div class="message has-background-info-light">
+<div class="label has-text-dark"><strong>Enter Your Zip Code:</strong></div>
+    <div class="control">
+      <input class="input" type="text" placeholder="e.g. 80844">
+    </div>
+    <br>
 <!--age selection drop down-->
 <div class="field">
-  <label class="label">Age </label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Select</option>
-        <option>puppy</option>
-        <option>young</option>
-        <option>adult</option>
-        <option>elderly</option>
-      </select>
-    </div>
-  </div>
+<label class="label">Age </label>
+<div class="control">
+<div class="select is-rounded">
+<select>
+<option>Select</option>
+<option>puppy</option>
+<option>young</option>
+<option>adult</option>
+<option>elderly</option>
+</select>
 </div>
-      <!--breed selection drop down - NEED TO ADD LIST FUNCTION-->
-      <div class="field">
-        <label class="label">Breed </label>
-        <div class="control">
-          <div class="select">
-            <select>
-              <option>Select</option>
-              
-            </select>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+<!--breed selection drop down - NEED TO ADD LIST FUNCTION-->
+<div class="field">
+<label class="label">Breed </label>
+<div class="control">
+<div class="select is-rounded">
+<select>
+  <option>Select</option>
+  
+</select>
+</div>
+</div>
+</div>
 
-       <!--mileage selection drop down - NEED TO FUNCTIONALITY-->
-       <div class="field">
-        <label class="label">Distance: </label>
-        <div class="control">
-          <div class="select">
-            <select>
-              <option>Select</option>
-              <option>5 Miles</option>
-              <option>10 Miles</option>
-              <option>15 Miles</option>
-              <option>20 Miles</option>
-              <option>25 Miles</option>
-              <option>25+ Miles</option>
-            </select>
-          </div>
-        </div>
-      </div>
+<!--mileage selection drop down - NEED TO FUNCTIONALITY-->
+<div class="field">
+<label class="label">Distance: </label>
+<div class="control">
+<div class="select is-rounded">
+<select>
+  <option>Select</option>
+  <option>5 Miles</option>
+  <option>10 Miles</option>
+  <option>15 Miles</option>
+  <option>20 Miles</option>
+  <option>25 Miles</option>
+  <option>25+ Miles</option>
+</select>
+</div>
+</div>
+</div>
+  </div>
+</article>
+
+      <!--zip code submission box -->
+                
       <br/>
       <!--search button-->
                 <div class="control">
@@ -147,21 +157,34 @@
             </section>
             </div>
             <div class="column">
+              
+
               <section class="section" id="search-box">
-                <h1 class="title">About Us</h1>
+                <h1 class="title has-text-info">About Us</h1>
                 <p>Our mission is to assist others in finding a dog that is eager to find their new furever family and home. Just enter in your search criteria, click submit, and browse the list of dogs ready to be adopted near you!</p>
                 <br/>
                 <p>We also provide tips and information about the pet adoption process, what to expect, and resources for caring for all types of breeds to further assist you in a smooth transition when you bring your sweet pup home with you.</p>
                 <br>
                 <p>We have so much to share each month! To keep up to date with our monthly newsletter submit your email below.</p>
                 <br/>
-                <div class="field">
-                  <label class="label">Enter Email to Subscribe:</label>
-                  <div class="control has-icons-left has-icons-right">
+                <br/>
+                <br/>
+
+                <p><strong>Subscribe to Our Newsletter:</strong></p>
+                <div class="field has-addons">
+                  <div class="control">
                     <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
                     </span>
+                  </div>
+
+                  <div class="control">
+                    <a class="button is-info">
+                      Submit
+                    </a>
+                  </div>
+                </div>
+                    <br/>
+                    <br/>
               </section>
               </div>
           </div>
