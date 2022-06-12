@@ -1,6 +1,9 @@
-.hero.is-fullheight.is-primary.has-background
-  img.hero-background.is-transparent src="https://www.fillmurray.com/1920/1080" alt="Fill Murray"
-  .hero-body
-    .container
-      h1.title Hero Image
-      h3.subtitle without CSS background-image
+.hero {
+  background-image: url('./pexels-blue-bird-7210716.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
