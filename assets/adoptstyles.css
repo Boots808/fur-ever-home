@@ -1,0 +1,10 @@
+.hero {
+    background-image: url('./adopt.jpg');
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
