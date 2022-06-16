@@ -1,6 +1,7 @@
-var dogBreeds = document.getElementById("dog-search")
+/*var dogBreeds = document.getElementById("dog-search")
 var dogInput = document.getElementById("dog-input")
 var dogInfo = document.getElementById("dog-information")
+var oImg = document.createElement("img")
 
 
 
@@ -25,8 +26,48 @@ console.log(dog)
 		.then(data =>{
 			console.log(data)
 			 dogInfo.innerText = data[0].breed
+            
         }
 			)
         
 		.catch(err => console.error(err));
+}*/
+console.log("Doge")
+
+const BASE_API_URL = 'https://api.thedogapi.com/v1'
+
+const fetchDogeBreeds = async () => {
+
+   const response = await fetch('https://api.thedogapi.com/v1/breeds');
+   const dogBreeds = await response.json();
+   populateDoge(dogBreeds);
 }
+
+const populateDoge = (breeds) => {
+    const select = document.querySelector('.breed-select');
+    const breedOptions = breeds.map(breed =>{
+        const option = document.createElement('option');
+        option.text = breed.name;
+       option.value = breed.id;
+       return option;
+    })
+
+    breedOptions.forEach(breedOption => {
+        select.appendChild(breedOption);
+
+    
+    })
+}
+
+const getDogeByBreed = async (breedId) => {
+
+const data = await fetch (BASE_API_URL + '/images/search?include_breed=1&breed + breedId').then((data) => data.json())
+const {url: imageUrl, breeds} = data;
+console.log(imageUrl);
+}
+const changeDoggo = () => {
+    console.log(event.target.value);
+    getDogeByBreed(event.target.value);
+}
+
+fetchDogeBreeds();

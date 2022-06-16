@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles.css">
+  
   </head>
   <body>
   <!--header start-->
@@ -62,10 +63,18 @@
 
 
 <!-- test search button for dog breeds -->
-<input id="dog-search" type="text">
+<!-- <input id="dog-search" type="text">
 <button id="dog-input" onclick="getDogInfo()">search</button>
-<p id="dog-information"></p>
-<p id="dog-img"></p>
+<p id="dog-information"></p> -->
+<!-- Doge Dropdown -->
+
+
+<h1 class="Doge-dropdown">Breed Selector</h1>
+<select class="breed-select" onchange="changeDoge(this)"
+<option> Select The Doge</option>
+</select>
+
+
 
 <!--page title text w/ white background-->
    <section>
@@ -74,7 +83,7 @@
      </p>
      <p class="subtitle is-size-4-fullhd has-text-grey has-text-centered">
         <em> Dog Adoption Made Easy!</em>
-   </p>
+
   </section>
         <br/>
 <!-- hero section start-->
@@ -191,6 +200,9 @@
     </section>
     
   <!--image cards begin-->
+
+
+  
      <section>
       <div class="columns is-mobile is-multiline is-centered">
         <div class="column is-narrow">
