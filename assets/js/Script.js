@@ -58,14 +58,17 @@ const populateDoge = (breeds) => {
     
     })
 }
+const fillDogeImage = (imageUrl) => {
+    document.querySelector('#Doge-Image').setAttribute('src', imageUrl)
+}
 
 const getDogeByBreed = async (breedId) => {
 
-const data = await fetch (BASE_API_URL + '/images/search?include_breed=1&breed + breedId').then((data) => data.json())
+const [ data ] = await fetch (BASE_API_URL + '/images/search?include_breed=1&breed_id=' + breedId ).then((data) => data.json())
 const {url: imageUrl, breeds} = data;
-console.log(imageUrl);
+fillDogeImage(imageUrl);
 }
-const changeDoggo = () => {
+const changeDoge = () => {
     console.log(event.target.value);
     getDogeByBreed(event.target.value);
 }
