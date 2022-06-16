@@ -42,9 +42,18 @@ const createDescriptionEntry =({label, value}) => {
     parentElement.appendChild(descriptionValue);
 
 }
+// clear description section to post next one
+const clearDogeDescription = () => {
+    const descriptionElement = document.querySelector(
+        '#doge-description'
+    )
+    while(descriptionElement.firstChild){
+        descriptionElement.removeChild(descriptionElement.firstChild)
+    }
+}
 // description section
 const fillDogeDescription = ({bredfor, name, temperament, lifeSpan, Origin,height,weight }) => {
-    clearDogeDescription
+    clearDogeDescription();
 createDescriptionEntry({
     label: 'Name',
     value: name
@@ -66,17 +75,18 @@ createDescriptionEntry({
    value: Origin
 })
 createDescriptionEntry({
-    label:'Height [cm]',
-    value: height.metric
+    label:'Height [Inches]',
+    value: height.imperial
 })
 createDescriptionEntry({
-    label:'Weight [kg]',
-    value: weight.metric
+    label:'Weight [Lbs]',
+    value: weight.imperial
 })
 }
 
 const getDogeByBreed = async (breedId) => {
 
+    // Posting the proper image
 const [ data ] = await fetch (BASE_API_URL + '/images/search?include_breed=1&breed_id=' + breedId ).then((data) => data.json())
 const {url: imageUrl, breeds} = data;
 fillDogeImage(imageUrl);
