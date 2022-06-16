@@ -8,9 +8,14 @@
   align-items: flex-start;
 }
 
-#doge-image {
+#Doge-Image {
   margin: 16px auto;
   object-fit: contain;
   width: 50%;
+  
+}
+#Doge-Dropdown {
+  margin: 10px auto;
+  align-items: center;
   
 }
