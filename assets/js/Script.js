@@ -68,7 +68,7 @@ const [ data ] = await fetch (BASE_API_URL + '/images/search?include_breed=1&bre
 const {url: imageUrl, breeds} = data;
 fillDogeImage(imageUrl);
 }
-const changeDoge = () => {
+const changeDoggo = () => {
     console.log(event.target.value);
     getDogeByBreed(event.target.value);
 }
