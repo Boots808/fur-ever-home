@@ -64,13 +64,6 @@
    <!--header end-->
 <br/>
 
-
-<!-- test search button for dog breeds -->
-<!-- <input id="dog-search" type="text">
-<button id="dog-input" onclick="getDogInfo()">search</button>
-<p id="dog-information"></p> -->
-<!-- Doge Dropdown -->
-
 <!--page title text w/ white background-->
    <section>
      <p class="title is-size-2-fullhd has-text-info-dark has-text-centered">
@@ -128,15 +121,19 @@
     <div class="columns.is-centered">
       <div class="column">
     <div class="control">
-      <h1  id="Doge-Dropdown" class="Doge-Dropdown column"><strong>Breed Selector</strong></h1>
-      <select class="breed-select column" onchange="changeDoggo(this)">
-       <option> Select a Dog</option> 
+      <h1 class="dropdown">Breed Selector</h1>
+      <select class="breed-select" onchange="changeDoggo(this)">
+        <option> Select a Doge</option> 
       </select>
-      <img src="" id="Doge-Image" class="image is-256x256" alt="Doge" >
-   </div> 
-</section>
-<br/>
-<br/>          
+      <h2 class="loading">Fetch! Search!</h2>
+        <img src="" id="Doge-Image" alt="Doge" > 
+        <dl id="doge-description">
+
+        </dl>
+  </div> 
+  </section>
+    <br/>
+    <br/>          
       <!--Random dog button-->
       <div class="control has-text-centered">
         <button class="button is-large is-info">Fetch!</button>
