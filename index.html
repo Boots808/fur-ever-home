@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles.css">
+  
   </head>
   <body>
   <!--header start-->
@@ -16,7 +17,7 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item has-background-info" href="./assets/Screen Shot 2022-06-09 at 9.49.07 PM.png" alt="company logo">
-              <img src="./assets/Screen Shot 2022-06-09 at 9.49.07 PM.png" href="file:///Users/user/Desktop/boot_camp_cert/projects/project-1/fur-ever-home/assets/adoptinfo.html">
+              <img src="./assets/Screen Shot 2022-06-09 at 9.49.07 PM.png" href="./assets/adoptinfo.html">
             </a>
   <!--nav menu button-->
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -29,29 +30,32 @@
           <div id="navbarBasicExample" class="navbar-menu has-background-info">
             <div class="navbar-end">
               <a class="navbar-item has-text-white">
-                Adopt
               </a>
+
+              <div id="navbarBasicExample" class="navbar-menu has-background-info">
+                <div class="navbar-end">
+                  <a class="navbar-item has-text-white" href="./randompups.html">
+                    Pup-arazzi Page<span class="icon"></span><i class="fa fa-camera" style="font-size:18px"></i>
+                  </a>
 
            <!--nav more button with drop down selections-->   
            <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link has-text-white">
-              Adoption Resources
+              Pet Resources
             </a>
    <!--nav more button drop down selections--> 
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="file:///Users/user/Desktop/boot_camp_cert/projects/project-1/fur-ever-home/assets/adoptinfo.html">
-                Post Adoption Tips
+              <a class="navbar-item" href="./assets/adoptinfo.html">
+                Dog Care Info<span class="icon"></span><i class='fas fa-dog'></i>
               </a>
             </div>
           </div>
 
       <!--nav newsletter sign up-->
               <a class="navbar-item has-text-white">
-                Newsletter Sign Up
               </a>
 
               <a class="navbar-item has-text-white">
-                Social Media Pages
               </a>
               </div>
             </div>
@@ -66,8 +70,8 @@
          Welcome to Endless Pawsibilities
      </p>
      <p class="subtitle is-size-4-fullhd has-text-grey has-text-centered">
-        <em> Dog Adoption Made Easy!</em>
-   </p>
+        <em> Dog Breed Information Made Easy!</em>
+
   </section>
         <br/>
 <!-- hero section start-->
@@ -85,12 +89,14 @@
                     <article class="message is-body">
                       <div class="message-body" height="300px" width="400px">
                           <h1 class="title has-text-info">About Us</h1>
-                            <p>Our mission is to assist others in finding a dog that is eager to find their new furever family and home. Just enter in your search criteria, click submit, and browse the list of dogs ready to be adopted near you!</p>
+                            <p>Looking for more information on a certain (or multiple) dog breeds? </p>
                                 <br/>
-                            <p>We also provide tips and information about the pet adoption process, what to expect, and resources for caring for all types of breeds to further assist you in a smooth transition when you bring your sweet pup home with you.</p>
+                            <p>Well you are in the spot! Our mission is to provide an easy way for you to select a breed and instantly view an image and breed information for your selection. We also provide pet resources such as information on caring for pet.</p>
+                                <br>
+                            <p>Don't forget to check out our PUP-arazzi page by clicking the link at the top right of the page where you can generate random images or even submit one of your own!</p>
                                 <br>
                             <p>We have so much to share each month! To keep up to date with our monthly newsletter submit your email below.</p>
-                      </div>
+                          </div>
                     </article>
                   </div>
                 </div>
@@ -109,65 +115,35 @@
 
     <!--start of form-->
   <section>
-    <h1 class="title has-text-info">Find Adorable Dogs Near You</h1>
+    <h1 class="title has-text-info">Find Dog Breed Information</h1>
+    <h3 class="label has-text-grey">Select from the Drop-Down Below:</h3>
+    <br/>
   <div class="message has-background-info-light">
-<div class="label has-text-dark"><strong>Enter Your Zip Code:</strong></div>
-    <div class="control">
-      <input class="input" type="text" placeholder="e.g. 80844">
-    </div>
-    <br>
-<!--age selection drop down-->
-    <div class="field">
-      <label class="label">Age </label>
-        <div class="control">
-<div class="select is-rounded">
-<select>
-<option>Select</option>
-<option>puppy</option>
-<option>young</option>
-<option>adult</option>
-<option>elderly</option>
-</select>
-</div>
-      </div>
-    </div>
-       <br/>
-<!--breed selection drop down - NEED TO ADD LIST FUNCTION-->
-     <div class="field">
-       <label class="label">Breed </label>
-         <div class="control">
-           <div class="select is-rounded">
-    <select>
-      <option>Select</option>
-    </select>
-           </div>
-         </div>
-       </div>
-     <br/>
-<!--mileage selection drop down - NEED TO FUNCTIONALITY-->
-      <div class="field">
-        <label class="label">Distance:</label>
-          <div class="control">
-           <div class="select is-rounded">
-       <select>
-         <option>Select</option>
-         <option>5 Miles</option>
-         <option>10 Miles</option>
-         <option>15 Miles</option>
-         <option>20 Miles</option>
-         <option>25 Miles</option>
-         <option>25+ Miles</option>
-       </select>
-     </div>
-    </div>
-   </div>
-</div>
 
-      <!--zip code submission box -->      
-      <!--search button-->
-      <div class="control">
-        <button class="button is-info">Search</button>
-        </div>
+    <div class="columns .is-centered">
+      <div class="column">
+    <div class="control">
+      <h1 class="dropdown is-right">Breed Selector</h1>
+      <br/>
+      </div>
+<br/>
+    <section>
+     <span class="icon-text">
+       <span class="icon">
+         <i class='fas fa-dog' style='color: grey'></i>
+         </span><select class="breed-select" onchange="changeDoggo(this)">
+    <option> Select a Doggy</option></span>
+      </select>
+      
+      <h2 class="loading">Fetching Image!</h2>
+        <img src="" id="Doge-Image"> 
+        <dl id="doge-description">
+        </dl>
+  </div> 
+
+  </section>
+    <br/>
+    <br/>          
       </div>
     </section>
   </div>
@@ -183,56 +159,7 @@
      </div>
     </section>
     
-  <!--image cards begin-->
-     <section>
-      <div class="columns is-mobile is-multiline is-centered">
-        <div class="column is-narrow">
-          <p class="bd-notification is-primary">
-            <code class="html">insert info</code><br>
-            insert info
-          </p>
-          <figure class="image is-200x200">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure>
-        </div>
-        <div class="column is-narrow">
-          <p class="bd-notification is-primary">
-            <code class="html">insert info</code><br>
-            insert info
-          </p>
-          <figure class="image is-200x200">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure>
-        </div>
-        <div class="column is-narrow">
-          <p class="bd-notification is-primary">
-            <code class="html">insert info</code><br>
-            insert info
-          </p>
-          <figure class="image is-200x200">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure>
-        </div>
-        <div class="column is-narrow">
-          <p class="bd-notification is-primary">
-            <code class="html">insert info</code><br>
-            insert info
-          </p>
-          <figure class="image is-200x200">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure>
-        </div>
-        <div class="column is-narrow">
-          <p class="bd-notification is-primary">
-            <code class="html">insert info</code><br>
-           insert info
-          </p>
-          <figure class="image is-200x200">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure>
-        </div>
-      </div>
-     </section>
+
     <br/>
     <br/>
     <br/>
@@ -250,7 +177,7 @@
                     Submit
                 </a>
               </div>
-    
+
           <div class="navbar-end">
             <a class="button is-medium is-home is-inverted">
               <span class="icon">
@@ -280,6 +207,6 @@
 </footer>
 
 <!--footer social media icon button end-->
-  <script src="./assets/script.js"></script>
+  <script src="./assets/js/Script.js"></script>
 </body>
 </html>
