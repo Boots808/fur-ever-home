@@ -8,3 +8,9 @@
   align-items: flex-start;
 }
 
+#doge-image {
+  margin: 16px auto;
+  object-fit: contain;
+  width: 50%;
+  
+}
