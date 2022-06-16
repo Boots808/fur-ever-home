@@ -32,6 +32,12 @@
               <a class="navbar-item has-text-white">
               </a>
 
+              <div id="navbarBasicExample" class="navbar-menu has-background-info">
+                <div class="navbar-end">
+                  <a class="navbar-item has-text-white">
+                    Random Dog Pics
+                  </a>
+
            <!--nav more button with drop down selections-->   
            <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link has-text-white">
@@ -115,42 +121,25 @@
     <!--start of form-->
   <section>
     <h1 class="title has-text-info">Find Image of a Specific Dog Breed</h1>
-    <p class="label has-text-grey">Select from the Drop-Down Below:</p>
+    <h3 class="label has-text-grey">Select from the Drop-Down Below:</h3>
     <br/>
   <div class="message has-background-info-light">
 
+    <div class="columns.is-centered">
+      <div class="column">
     <div class="control">
-      <h1  id="Doge-Dropdown" class="Doge-Dropdown"><strong>Breed Selector</strong></h1>
-      <select class="breed-select" onchange="changeDoggo(this)">
+      <h1  id="Doge-Dropdown" class="Doge-Dropdown column"><strong>Breed Selector</strong></h1>
+      <select class="breed-select column" onchange="changeDoggo(this)">
        <option> Select a Dog</option> 
       </select>
-      <img src="" id="Doge-Image" alt="Doge" >
-
-
-
-
-    </div>
-    <br>
-<!--age selection drop down-->
-    <div class="field">
-      </div>
-    </div>
-       <br/>
-
-
-           </div>
-         </div>
-       </div>
-     <br/>
-     </div>
-    </div>
-   </div>
-</div>
-
-      <!--zip code submission box -->      
-      <!--search button-->
-      <div class="control">
-        <button class="button is-info">Search</button>
+      <img src="" id="Doge-Image" class="image is-256x256" alt="Doge" >
+   </div> 
+</section>
+<br/>
+<br/>          
+      <!--Random dog button-->
+      <div class="control has-text-centered">
+        <button class="button is-large is-info">Fetch!</button>
         </div>
       </div>
     </section>
@@ -167,7 +156,6 @@
      </div>
     </section>
     
-  <!--image cards begin-->
 
     <br/>
     <br/>
@@ -181,8 +169,13 @@
                     <div class="control">
                       <input class="input end" type="email" placeholder="e.g. alexsmith@gmail.com">
               </div>
+              <div class="control">
+                <a class="button is-info is-light">
+                    Submit
+                </a>
+              </div>
 
-              <section>
+             <!-- <section>
               <div class="control">
                 <p>Select the Button Below to View Submitted Photos</p>
                 <p>Try to guess each breed!</p>
@@ -191,7 +184,7 @@
                 </a>
               </div>
             </section>
-    
+          -->
           <div class="navbar-end">
             <a class="button is-medium is-home is-inverted">
               <span class="icon">
