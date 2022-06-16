@@ -31,13 +31,13 @@ const fillDogeImage = (imageUrl) => {
     document.querySelector('#Doge-Image').setAttribute('src', imageUrl)
 }
 
-// description list
-const createDescriptionEntry =({label, value}) => {
+// Description Entry
+const createDescriptionEntry = ({label, value}) => {
     const descriptionTerm = document.createElement('dt');
     descriptionTerm.textContent = label;
     const descriptionValue = document.createElement('dd');
     descriptionValue.textContent = value;
-    document.querySelector('#doge-description');
+    const parentElement = document.querySelector('#doge-description');
     parentElement.appendChild(descriptionTerm);
     parentElement.appendChild(descriptionValue);
 
@@ -52,7 +52,7 @@ const clearDogeDescription = () => {
     }
 }
 // description section
-const fillDogeDescription = ({bredfor, name, temperament, lifeSpan, Origin,height,weight }) => {
+const fillDogeDescription = ({bred_for, breed_group, name, temperament, life_span, origin,height,weight }) => {
     clearDogeDescription();
 createDescriptionEntry({
     label: 'Name',
@@ -60,7 +60,11 @@ createDescriptionEntry({
 })
 createDescriptionEntry({
     label:'Bred for',
-    value: bredfor
+    value: bred_for
+})
+createDescriptionEntry({
+    label: 'Breed Group',
+    value: breed_group
 })
 createDescriptionEntry({
     label:'Temperement',
@@ -68,11 +72,11 @@ createDescriptionEntry({
 })
 createDescriptionEntry({
     label:'Life Span',
-    value: lifeSpan
+    value: life_span
 })
 createDescriptionEntry({
    label:'Origin',
-   value: Origin
+   value: origin
 })
 createDescriptionEntry({
     label:'Height [Inches]',
@@ -86,12 +90,20 @@ createDescriptionEntry({
 
 const getDogeByBreed = async (breedId) => {
 
-    // Posting the proper image
+    // loading element Not working. Debug later
+    const loadingElement = document.querySelector('.loading');
+     loadingElement.classList.add('show-loading');
+
+    //  Posting the proper image
 const [ data ] = await fetch (BASE_API_URL + '/images/search?include_breed=1&breed_id=' + breedId ).then((data) => data.json())
 const {url: imageUrl, breeds} = data;
 fillDogeImage(imageUrl);
 fillDogeDescription(breeds[0]);
+
+// removing load element
+loadingElement.classList.remove('show-loading');
 }
+
 const changeDoggo = () => {
     console.log(event.target.value);
     getDogeByBreed(event.target.value);
