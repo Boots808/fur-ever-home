@@ -52,9 +52,11 @@ const clearDogeDescription = () => {
     }
 }
 // description section
-const fillDogeDescription = ({bred_for, breed_group, name, temperament, life_span, origin,height,weight }) => {
+const fillDogeDescription = ({bred_for, breed_group, name, temperament, life_span, origin, height, weight }) => {
     clearDogeDescription();
-createDescriptionEntry({
+    // clear doge ending
+// descriptions
+    createDescriptionEntry({
     label: 'Name',
     value: name
 })
@@ -90,7 +92,7 @@ createDescriptionEntry({
 
 const getDogeByBreed = async (breedId) => {
 
-    // loading element Not working. Debug later
+    // Loading Element
     const loadingElement = document.querySelector('.loading');
      loadingElement.classList.add('show-loading');
 
@@ -100,7 +102,7 @@ const {url: imageUrl, breeds} = data;
 fillDogeImage(imageUrl);
 fillDogeDescription(breeds[0]);
 
-// removing load element
+// Removing Load Element
 loadingElement.classList.remove('show-loading');
 }
 
