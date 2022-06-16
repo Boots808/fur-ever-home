@@ -30,29 +30,32 @@
           <div id="navbarBasicExample" class="navbar-menu has-background-info">
             <div class="navbar-end">
               <a class="navbar-item has-text-white">
-                Adopt
               </a>
+
+              <div id="navbarBasicExample" class="navbar-menu has-background-info">
+                <div class="navbar-end">
+                  <a class="navbar-item has-text-white">
+                    Random Dog Pics
+                  </a>
 
            <!--nav more button with drop down selections-->   
            <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link has-text-white">
-              Adoption Resources
+              Additional Info
             </a>
    <!--nav more button drop down selections--> 
             <div class="navbar-dropdown">
               <a class="navbar-item" href="file:///Users/user/Desktop/boot_camp_cert/projects/project-1/fur-ever-home/assets/adoptinfo.html">
-                Post Adoption Tips
+                Pet Care Info
               </a>
             </div>
           </div>
 
       <!--nav newsletter sign up-->
               <a class="navbar-item has-text-white">
-                Newsletter Sign Up
               </a>
 
               <a class="navbar-item has-text-white">
-                Social Media Pages
               </a>
               </div>
             </div>
@@ -67,7 +70,7 @@
          Welcome to Endless Pawsibilities
      </p>
      <p class="subtitle is-size-4-fullhd has-text-grey has-text-centered">
-        <em> Dog Adoption Made Easy!</em>
+        <em> Dog Breed Information Made Easy!</em>
 
   </section>
         <br/>
@@ -86,11 +89,11 @@
                     <article class="message is-body">
                       <div class="message-body" height="300px" width="400px">
                           <h1 class="title has-text-info">About Us</h1>
-                            <p>Our mission is to assist others in finding a dog that is eager to find their new furever family and home. Just enter in your search criteria, click submit, and browse the list of dogs ready to be adopted near you!</p>
+                            <p>Not sure what breed you are most interested in? How about the hair length, color, and size of a certain dog breed? </p>
                                 <br/>
-                            <p>We also provide tips and information about the pet adoption process, what to expect, and resources for caring for all types of breeds to further assist you in a smooth transition when you bring your sweet pup home with you.</p>
+                            <p>Well you are in the spot! Our mission is to provide an easy way for you to select a breed to view an image of one. With so many it can be hard to remember! If you are looking for information on caring for a pet please see our resource on the site navigation bar drop down.</p>
                                 <br>
-                            <p>We have so much to share each month! To keep up to date with our monthly newsletter submit your email below.</p>
+                            <p>We also provide a random image generator so you can see oh so cute submitted photos from some owners themselves. We have so much to share each month! To keep up to date with our monthly newsletter submit your email below.</p>
                       </div>
                     </article>
                   </div>
@@ -102,14 +105,14 @@
 </section>
 
 <!-- Breed Dropdown -->
-<h1 class="dropdown">Breed Selector</h1>
+<!-- <h1 class="dropdown">Breed Selector</h1>
 <select class="breed-select" onchange="changeDoggo(this)">
  <option> Select a Doge</option> 
 </select>
 <h2 class="loading">Fetch! Search!</h2>
 <img src="" id="Doge-Image" alt="Doge" > 
 <dl id="doge-description">
-<p>test where this is even posting</p>
+<p>test where this is even posting</p>  -->
 
 
 </dl>
@@ -123,15 +126,51 @@
 <!--texting this-->
 
     <!--start of form-->
-  <!-- <section>
-    <h1 class="title has-text-info">Find Adorable Dogs Near You</h1>
+  <section>
+    <h1 class="title has-text-info">Find Image of a Specific Dog Breed</h1>
+    <h3 class="label has-text-grey">Select from the Drop-Down Below:</h3>
+    <br/>
   <div class="message has-background-info-light">
-<div class="label has-text-dark"><strong>Enter Your Zip Code:</strong></div>
-    <div class="control">
-      <input class="input" type="text" placeholder="e.g. 80844">
-    </div>
-    <br>
 
+    <div class="columns.is-centered">
+      <div class="column">
+    <div class="control">
+      <h1 class="dropdown">Breed Selector</h1>
+      <select class="breed-select" onchange="changeDoggo(this)">
+        <option> Select a Doge</option> 
+      </select>
+      <h2 class="loading">Fetch! Search!</h2>
+        <img src="" id="Doge-Image" alt="Doge" > 
+        <dl id="doge-description">
+
+        </dl>
+  </div> 
+  </section>
+    <br/>
+    <br/>          
+      <!--Random dog button-->
+      <div class="control has-text-centered">
+        <button class="button is-large is-info">Fetch!</button>
+        </div>
+      </div>
+    </section>
+  </div>
+          <br/>
+          <br/>
+        </section>
+      </div>
+    </div>
+
+     <div class = "search-result">
+        <div class="col-xs-push-2 col-xs-5"></div>
+          <div class="col-xs-push-1 col-xs-4">
+     </div>
+    </section>
+    
+
+    <br/>
+    <br/>
+    <br/>
 
 <!--footer-->
 <footer class="footer has-background-info">
@@ -146,7 +185,17 @@
                     Submit
                 </a>
               </div>
-    
+
+             <!-- <section>
+              <div class="control">
+                <p>Select the Button Below to View Submitted Photos</p>
+                <p>Try to guess each breed!</p>
+                <a class="button is-info is-light">
+                    Fetch
+                </a>
+              </div>
+            </section>
+          -->
           <div class="navbar-end">
             <a class="button is-medium is-home is-inverted">
               <span class="icon">
