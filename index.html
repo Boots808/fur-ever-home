@@ -115,11 +115,12 @@
     <!--start of form-->
   <section>
     <h1 class="title has-text-info">Find Image of a Specific Dog Breed</h1>
+    <p class="label has-text-grey">Select from the Drop-Down Below:</p>
+    <br/>
   <div class="message has-background-info-light">
-<div class="label has-text-dark"><strong>Find an Image of a Specific Breed</strong></div>
+
     <div class="control">
-      
-      <h1  id="Doge-Dropdown" class="Doge-Dropdown">Breed Selector</h1>
+      <h1  id="Doge-Dropdown" class="Doge-Dropdown"><strong>Breed Selector</strong></h1>
       <select class="breed-select" onchange="changeDoggo(this)">
        <option> Select a Dog</option> 
       </select>
@@ -180,11 +181,16 @@
                     <div class="control">
                       <input class="input end" type="email" placeholder="e.g. alexsmith@gmail.com">
               </div>
+
+              <section>
               <div class="control">
+                <p>Select the Button Below to View Submitted Photos</p>
+                <p>Try to guess each breed!</p>
                 <a class="button is-info is-light">
-                    Submit
+                    Fetch
                 </a>
               </div>
+            </section>
     
           <div class="navbar-end">
             <a class="button is-medium is-home is-inverted">
