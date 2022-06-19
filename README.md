@@ -1,4 +1,4 @@
-# Bone-pugs-&-harmony
+# Bone-Pugs-&-Harmony
 
 **Version 1.0.0**
 
@@ -6,6 +6,8 @@ The purpose of this project was to create an apoption site for people intrested 
 The website also provides information on patricular breeds as well as a picture.
 Thie site also allows users to access random photos of dogs.
 The site also allows users to upload 
+
+The name of the Website is EndlessPawsibilities
 
 
 ## Contributors
